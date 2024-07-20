@@ -1,42 +1,74 @@
+@keyframes ticker {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-html {
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vw;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: right;
-    
-}
-
-.main-text p {
+    flex-direction: column;
+    min-height: 100vh;
     color: white;
-    padding-right: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
-.main-button button {
-    width: 8vw;
-    height: 2.5vw;
-    margin-right: 10px;
-    font-size: 0.8em;
-    border-radius: 50px;
-    background-color: #1e1e1e;
+.content-wrapper {
+    flex: 1;
+}
+
+.random-announcement-ticker {
+    flex: 1;
+    overflow: hidden;
+}
+
+.random-announcement-ticker p {
+    animation: ticker 42.0s linear infinite;
+}
+
+body header {
     color: white;
-    border-color: #1e1e1e;
+    padding: 10px 0;
+    text-align: center;
 }
 
-body button:hover {
-    background-color: #2e2e2e;
+body header nav {
+    display: flex;
 }
 
-body button:active {
-    background-color: #3e3e3e;
+body header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+body header nav ul li {
+    margin: 0 10px;
+}
+
+body header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+body header nav ul li a:hover {
+    color: gray;
+}
+
+body footer p a {
+    color: white;
+    text-decoration: none;
 }
