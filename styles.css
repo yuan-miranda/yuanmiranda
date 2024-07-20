@@ -38,12 +38,19 @@ body {
 
 .random-announcement-ticker p {
     animation: ticker 42.0s linear infinite;
+    white-space: nowrap;
 }
 
 body header {
     color: white;
     padding: 10px 0;
     text-align: center;
+
+    /* sticky header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 body header nav {
@@ -53,6 +60,7 @@ body header nav {
 body header nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 body header nav ul li {
