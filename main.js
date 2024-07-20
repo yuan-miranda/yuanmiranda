@@ -1,25 +1,30 @@
+combination = ["ControlLeft", "Slash"];
+let keyPressed = [];
+let consoleOpen = false;
+const console = document.querySelector(".console");
+const nonConsole = document.querySelector(".non-console");
+
+function onPress(key) {
+    if (!keyPressed.includes(key)) keyPressed.push(key);
+}
+
+function onRelease(key) {
+    keyPressed = keyPressed.filter(k => k !== key);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const veryVerySecretCompletelyHiddenCheatCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "KeyB", "KeyA"];
-    let userInput = [];
-    let timer = null;
+    console.style.display = "none";
+});
 
-    function resetInput() {
-        userInput = [];
-        clearTimeout(timer);
-        timer = null;
+document.addEventListener("keydown", e => {
+    onPress(e.code);
+    if (combination.every(k => keyPressed.includes(k))) {
+        console.style.display = consoleOpen ? "none" : "block";
+        nonConsole.style.display = consoleOpen ? "block" : "none";
+        consoleOpen = !consoleOpen;
     }
+});
 
-    document.addEventListener("keydown", (e) => {
-        userInput.push(e.code);
-        if (!timer) timer = setTimeout(() => {
-            resetInput();
-        }, 5000);
-
-        if (userInput.length === veryVerySecretCompletelyHiddenCheatCode.length) {
-            if (userInput.every((code, index) => code === veryVerySecretCompletelyHiddenCheatCode[index])) {
-                alert("web console enabled pffft");
-            }
-            resetInput();
-        }
-    })
-})
+document.addEventListener("keyup", e => {
+    onRelease(e.code);
+});
