@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="archive.css">
+</head>
+<body>
+    <div class="container">
+        <iframe src="" frameborder="0" class="timelineFrame"></iframe>
+    </div>
+    <div class="timeline">
+        <div class="timeline-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="timeline-slider">
+            <input type="range" min="0" step="1" oninput="updateTimeline(this.value)" class="slider">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

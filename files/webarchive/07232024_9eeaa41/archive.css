@@ -1,0 +1,82 @@
+@keyframes ticker {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+    display: flex;
+    flex-direction: column;
+}
+
+body .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    background-color: white;
+    overflow: auto;
+}
+
+body .container .timelineFrame {
+    flex: 1;
+}
+
+body .timeline {
+    color: white;
+    flex: 0.04;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+body .timeline .timeline-slider {
+    display: flex;
+    width: 100%;
+}
+
+body .timeline .timeline-slider .slider {
+    width: 100%;
+    margin-right: 10px;
+}
+
+body .timeline .timeline-nav {
+    padding: 10px;
+}
+
+body .timeline .timeline-nav nav ul {
+    display: flex;
+    list-style: none;
+}
+
+body .timeline .timeline-nav nav ul li {
+    margin-right: 20px;
+}
+
+body .timeline .timeline-nav nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+body .timeline .timeline-nav nav ul li a:hover {
+    color: gray;
+}
