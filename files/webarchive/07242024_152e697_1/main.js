@@ -3,11 +3,12 @@ const versions = [
     "../04092024_ef4a586_2/index.html",
     "../04102024_12c236c_1/index.html",
     "../04102024_374ba48_2/index.html",
-    "../05012024_227abb8/index.html",
+    "../05012024_227abb8_1/index.html",
     "../07202024_13cab6e_1/index.html",
     "../07202024_cd33c7e_2/index.html",
     "../07202024_021e208_3/index.html",
     "../07202024_2d944bd_4/index.html",
+    "../07232024_9eeaa41_1/index.html",
     "index.html"
 ]
 
