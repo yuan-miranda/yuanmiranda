@@ -15,16 +15,13 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a onclick="expandInfo()">Info</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="archive.html">Archive</a></li>
                 </ul>
             </nav>
-            <input type="range" min="0" step="1" oninput="updateTimeline(this.value)" class="slider">
         </div>
-        <div class="timeline-details">
-            <p class="commit">30b04de</p>
-            <p class="commit-message">Initial Commit.</p>
-            <p class="date">04/09/2024</p>
-            <p class="description">Inital commit on the website.</p>
+        <div class="timeline-slider">
+            <input type="range" min="0" step="1" oninput="updateTimeline(this.value)" class="slider">
         </div>
     </div>
     <script src="main.js"></script>

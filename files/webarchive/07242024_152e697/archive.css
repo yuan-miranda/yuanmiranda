@@ -41,22 +41,26 @@ body .container .timelineFrame {
 }
 
 body .timeline {
+    color: white;
     flex: 0.04;
-    padding: 0 10px 0 10px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+body .timeline .timeline-slider {
+    display: flex;
+    width: 100%;
+}
+
+body .timeline .timeline-slider .slider {
+    width: 100%;
+    margin-right: 10px;
 }
 
 body .timeline .timeline-nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-body .timeline .timeline-nav .slider {
-    width: 100%;
+    padding: 10px;
 }
 
 body .timeline .timeline-nav nav ul {
