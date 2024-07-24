@@ -1,85 +1,79 @@
 const versions = {
-    "files/webarchive/04092024_30b04de_1/index.html": {
+    "../04092024_30b04de_1/index.html": {
         "commit": "30b04de",
         "commitMessage": "Initial commit",
         "date": "04/09/2024",
         "description": ""
     },
-    "files/webarchive/04092024_ef4a586_2/index.html": {
+    "../04092024_ef4a586_2/index.html": {
         "commit": "ef4a586",
         "commitMessage": "Hello, World!",
         "date": "04/09/2024",
         "description": ""
     },
-    "files/webarchive/04102024_12c236c_1/index.html": {
+    "../04102024_12c236c_1/index.html": {
         "commit": "12c236c",
         "commitMessage": "check if Github Pages store values.",
         "date": "04/10/2024",
         "description": ""
     },
-    "files/webarchive/04102024_374ba48_2/index.html": {
+    "../04102024_374ba48_2/index.html": {
         "commit": "374ba48",
         "commitMessage": "just discovered Github Pages is static lol",
         "date": "04/10/2024",
         "description": ""
     },
-    "files/webarchive/05012024_227abb8_1/index.html": {
+    "../05012024_227abb8_1/index.html": {
         "commit": "227abb8",
         "commitMessage": "test",
         "date": "05/01/2024",
         "description": ""
     },
-    "files/webarchive/07202024_13cab6e_1/index.html": {
+    "../07202024_13cab6e_1/index.html": {
         "commit": "13cab6e",
         "commitMessage": "HAS CONTENT NOW?!?",
         "date": "07/20/2024",
         "description": ""
     },
-    "files/webarchive/07202024_cd33c7e_2/index.html": {
+    "../07202024_cd33c7e_2/index.html": {
         "commit": "cd33c7e",
         "commitMessage": "fixed the wrapping issue of the ticker, and made the header sticky.",
         "date": "07/20/2024",
         "description": ""
     },
-    "files/webarchive/07202024_021e208_3/index.html": {
+    "../07202024_021e208_3/index.html": {
         "commit": "021e208",
         "commitMessage": "added some very secret code (shh!)",
         "date": "07/20/2024",
         "description": ""
     },
-    "files/webarchive/07202024_2d944bd_4/index.html": {
+    "../07202024_2d944bd_4/index.html": {
         "commit": "2d944bd",
         "commitMessage": "added the console toggler and console input field.",
         "date": "07/20/2024",
         "description": ""
     },
-    "files/webarchive/07232024_9eeaa41_1/index.html": {
+    "../07232024_9eeaa41_1/index.html": {
         "commit": "9eeaa41",
         "commitMessage": "added website design history browsing, (testing)",
         "date": "07/23/2024",
         "description": ""
     },
-    "files/webarchive/07242024_152e697_1/index.html": {
+    "../07242024_152e697_1/index.html": {
         "commit": "152e697",
         "commitMessage": "fixed the path error when browsing the archive recursively",
         "date": "07/24/2024",
         "description": ""
     },
-    "files/webarchive/07242024_54ea0a4_2/index.html": {
+    "../07242024_54ea0a4_2/index.html": {
         "commit": "54ea0a4",
         "commitMessage": "Added archive info expand",
         "date": "07/24/2024",
         "description": ""
     },
-    "files/webarchive/07242024_e0eca97_3/index.html": {
+    "../07242024_e0eca97_3/index.html": {
         "commit": "e0eca97",
         "commitMessage": "fixed the inconsistent naming of folders.",
-        "date": "07/24/2024",
-        "description": ""
-    },
-    "files/webarchive/07242024_ccd655c_4/index.html": {
-        "commit": "ccd655c",
-        "commitMessage": "(test) github pages might not syncing",
         "date": "07/24/2024",
         "description": ""
     },
@@ -105,12 +99,9 @@ function expandInfo(boolOverride=false) {
     const pCommitMessage = document.querySelector(".commit-message");
     const pDate = document.querySelector(".date");
     const pDescription = document.querySelector(".description");
-    const currentFrameParts = versionFrame.src.split("/");
-    let currentFrame;
+    const currentFrame = (versionFrame.src.split("/").slice(3)).join("/");
     versionFrame = document.querySelector(".timelineFrame");
 
-    if (currentFrameParts.includes("yuan-miranda.github.io")) currentFrame = currentFrameParts.slice(4).join("/");
-    else currentFrame = currentFrameParts.slice(3).join("/");
     if (!boolOverride) infoDivOpen = !infoDivOpen;
     if (infoDivOpen) infoDiv.style.display = "block";
     else infoDiv.style.display = "none";
@@ -126,6 +117,7 @@ function updateTimeline(value) {
     versionFrame = document.querySelector(".timelineFrame");
     const selectedVersion = Object.keys(versions)[value];
     versionFrame.src = selectedVersion;
+    console.log("called");
     expandInfo(true);
 }
 

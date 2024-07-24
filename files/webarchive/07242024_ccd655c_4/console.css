@@ -1,0 +1,22 @@
+body {
+    color: white;
+}
+
+.console-interface {
+    display: flex;
+    flex-direction: row;
+}
+
+.console-interface input {
+    flex: 4;
+    font-family: Consolas;
+    margin-right: 10px;
+}
+
+.console-interface button {
+    flex: 1;
+}
+
+.console-output {
+    flex: 1;
+}
