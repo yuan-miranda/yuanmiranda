@@ -1,98 +1,92 @@
 const versions = {
-    "../../files/webarchive/1_04092024_30b04de/index.html": {
+    "../../../1_04092024_30b04de/index.html": {
         "commit": "30b04de",
         "commitMessage": "Initial commit",
         "date": "04/09/2024",
         "description": ""
     },
-    "../../files/webarchive/2_04092024_ef4a586/index.html": {
+    "../../../2_04092024_ef4a586/index.html": {
         "commit": "ef4a586",
         "commitMessage": "Hello, World!",
         "date": "04/09/2024",
         "description": ""
     },
-    "../../files/webarchive/3_04102024_12c236c/index.html": {
+    "../../../3_04102024_12c236c/index.html": {
         "commit": "12c236c",
         "commitMessage": "check if Github Pages store values.",
         "date": "04/10/2024",
         "description": ""
     },
-    "../../files/webarchive/4_04102024_374ba48/index.html": {
+    "../../../4_04102024_374ba48/index.html": {
         "commit": "374ba48",
         "commitMessage": "just discovered Github Pages is static lol",
         "date": "04/10/2024",
         "description": ""
     },
-    "../../files/webarchive/5_05012024_227abb8/index.html": {
+    "../../../5_05012024_227abb8/index.html": {
         "commit": "227abb8",
         "commitMessage": "test",
         "date": "05/01/2024",
         "description": ""
     },
-    "../../files/webarchive/6_07202024_13cab6e/index.html": {
+    "../../../6_07202024_13cab6e/index.html": {
         "commit": "13cab6e",
         "commitMessage": "HAS CONTENT NOW?!?",
         "date": "07/20/2024",
         "description": ""
     },
-    "../../files/webarchive/7_07202024_cd33c7e/index.html": {
+    "../../../7_07202024_cd33c7e/index.html": {
         "commit": "cd33c7e",
         "commitMessage": "fixed the wrapping issue of the ticker, and made the header sticky.",
         "date": "07/20/2024",
         "description": ""
     },
-    "../../files/webarchive/8_07202024_021e208/index.html": {
+    "../../../8_07202024_021e208/index.html": {
         "commit": "021e208",
         "commitMessage": "added some very secret code (shh!)",
         "date": "07/20/2024",
         "description": ""
     },
-    "../../files/webarchive/9_07202024_2d944bd/index.html": {
+    "../../../9_07202024_2d944bd/index.html": {
         "commit": "2d944bd",
         "commitMessage": "added the console toggler and console input field.",
         "date": "07/20/2024",
         "description": ""
     },
-    "../../files/webarchive/10_07232024_9eeaa41/index.html": {
+    "../../../10_07232024_9eeaa41/index.html": {
         "commit": "9eeaa41",
         "commitMessage": "added website design history browsing, (testing)",
         "date": "07/23/2024",
         "description": ""
     },
-    "../../files/webarchive/11_07242024_152e697/index.html": {
+    "../../../11_07242024_152e697/index.html": {
         "commit": "152e697",
         "commitMessage": "fixed the path error when browsing the archive recursively",
         "date": "07/24/2024",
         "description": ""
     },
-    "../../files/webarchive/12_07242024_54ea0a4/index.html": {
+    "../../../12_07242024_54ea0a4/index.html": {
         "commit": "54ea0a4",
         "commitMessage": "Added archive info expand",
         "date": "07/24/2024",
         "description": ""
     },
-    "../../files/webarchive/13_07242024_e0eca97/index.html": {
+    "../../../13_07242024_e0eca97/index.html": {
         "commit": "e0eca97",
         "commitMessage": "fixed the inconsistent naming of folders.",
         "date": "07/24/2024",
         "description": ""
     },
-    "../../files/webarchive/14_07242024_ccd655c/index.html": {
+    "../../../14_07242024_ccd655c/index.html": {
         "commit": "ccd655c",
         "commitMessage": "(test) github pages might not syncing",
         "date": "07/24/2024",
         "description": ""
     },
-    "../../files/webarchive/15_07242024_9bb3571/index.html": {
+    "../../../15_07242024_9bb3571/index.html": {
         "commit": "9bb3571",
         "commitMessage": "(test2) ...",
         "date": "07/24/2024",
-        "description": ""
-    },
-    "../../files/webarchive/16_08012024_42a76b9/index.html": {
-        "commit": "42a76b9",
-        "commitMessage": "just did a lil bit of update.",
-        "date": "08/01/2024",
         "description": ""
     },
     "../../index.html": {

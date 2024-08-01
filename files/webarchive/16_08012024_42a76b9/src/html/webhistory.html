@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/webhistory.css">
+</head>
+<body>
+    <div class="webhistory-container">
+        <iframe src="" frameborder="0" class="timelineFrame"></iframe>
+    </div>
+    <div class="timeline">
+        <div class="timeline-nav">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a onclick="expandInfo()">Info</a></li>
+                </ul>
+            </nav>
+            <input type="range" min="0" step="1" oninput="updateTimeline(this.value)" class="slider">
+        </div>
+        <div class="timeline-details">
+            <p class="commit">30b04de</p>
+            <p class="commit-message">Initial Commit.</p>
+            <p class="date">04/09/2024</p>
+            <p class="description">Inital commit on the website.</p>
+        </div>
+    </div>
+    <script src="../../main.js"></script>
+</body>
+</html>
