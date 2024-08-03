@@ -59,7 +59,7 @@ body .about-container .content-wrapper header nav .random-announcement-ticker {
 }
 
 body .about-container .content-wrapper header nav .random-announcement-ticker p {
-    animation: ticker 42.0s linear infinite;
+    animation: ticker 10.0s linear infinite;
     white-space: nowrap;
 }
 

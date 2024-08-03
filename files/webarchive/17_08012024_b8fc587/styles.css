@@ -58,17 +58,13 @@ body .index-container .content-wrapper .index-content .console-ui iframe {
     height: 100%;
 }
 
-body .index-container .content-wrapper .index-content .non-console-ui {
-    /* text-align: justify; */
-}
-
 body .index-container .content-wrapper header nav .random-announcement-ticker {
     flex: 1;
     overflow: hidden;
 }
 
 body .index-container .content-wrapper header nav .random-announcement-ticker p {
-    animation: ticker 10.0s linear infinite;
+    animation: ticker 42.0s linear infinite;
     white-space: nowrap;
 }
 
